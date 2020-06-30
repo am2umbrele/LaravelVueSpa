@@ -15,8 +15,9 @@ git clone git@github.com:am2umbrele/LaravelVueSPA.git
 **Install dependencies**
 ```
 composer install
+npm install
 ```
-**Change .env database parameters** 
+**Copy .env.example to .env and change .env database parameters as needed** 
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -24,6 +25,10 @@ DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=
+```
+**Generate app key**
+```
+php artisan key:generate
 ```
 **Run migrations**
 ```
